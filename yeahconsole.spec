@@ -1,3 +1,5 @@
+%define debug_package %{nil}
+
 Summary:	Quake-like pull-down console
 Name:		yeahconsole
 Version:	0.3.4
@@ -51,3 +53,13 @@ EOF
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 
+
+
+%changelog
+* Thu May 24 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.3.4-1
++ Revision: 800409
+- imported package yeahconsole
+
+
+* Tue Jul 28 2009 KDulcimer <kdulcimer@unity-linux.org> 0.3.4-1-unity2009
+- Build yeahconsole

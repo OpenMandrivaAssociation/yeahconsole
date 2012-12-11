@@ -1,0 +1,44 @@
+Here is an example .Xdefaults:
+
+yeahconsole*background:black
+yeahconsole*foreground:green
+yeahconsole*screenWidth:1152
+yeahconsole*aniDelay:30
+yeahconsole*toggleKey:None+Menu
+
+Specify yeahconsole*term:urxvt (or urxvtc if you have urxvtd running) in your
+.Xdefaults if you have urxvt and want to have Unicode support.
+
+yeahconsole*restart: 1 gives an option to restart yeahconsole
+
+Installation: make;make install
+Yeahconsole can be configured via xresources:
+
+Put something like:
+yeahconsole*foo:value
+in your .Xdefaults. "foo" can be any standard xresource from xterm
+(see man xterm) or:
+
+yeahconsole*restart:        0 (default) or 1 should the terminal restart?
+yeahconsole*term:           terminal to use (valid:urxvt, urxvtc, xterm(default))
+yeahconsole*screenWidth:    width (defaults to display width)
+yeahconsole*consoleHeight:  number of lines (defaults to 10)
+yeahconsole*xOffset:        x position (defaults to 0)
+yeahconsole*aniDelay:       delay for the slide animation (defaults to 40)
+yeahconsole*stepSize:	    step size for the animation (defaults to 1)
+yeahconsole*handleWidth:    width for the resize handle (defaults to 3)
+yeahconsole*handleColor:    color for the handle    (defaults to grey70)
+
+Keycombos are specified as follows: 
+
+[any combination of "Win" "Alt" "Control" or "None"]+[name of key]
+
+eg. ControlAlt+y,  Control+asciitilde, Win+c, ControlAltWin+y ,None+Menu,....
+(the order of modifiers does not matter)
+
+toggleKey:      key combo that toggles yeahconsole (defaults to ControlAlt+y)
+keyBigger:      increase  height of yeahconsole (default: Control+KP_Add)
+keySmaller:     decrease height of yeahconsole (default: Control+KP_Subtract) 
+keyFull:	    toggle fullscreenmode (default: Alt+F11)
+
+xOffset and screenWidth are useful if you use a xinerama setup.

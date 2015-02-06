@@ -3,7 +3,7 @@
 Summary:	Quake-like pull-down console
 Name:		yeahconsole
 Version:	0.3.4
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Terminals
 Url:		http://phrat.de/downloads.html

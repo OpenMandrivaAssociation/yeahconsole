@@ -6,7 +6,7 @@ Version:	0.3.4
 Release:	2
 License:	GPLv2
 Group:		Terminals
-Url:		http://phrat.de/downloads.html
+Url:		https://phrat.de/downloads.html
 Source0:	http://phrat.de/%{name}-%{version}.tar.xz
 Source1:	examples
 BuildRequires:	pkgconfig(x11)

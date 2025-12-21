@@ -9,6 +9,7 @@ Group:		Terminals
 Url:		https://phrat.de/downloads.html
 Source0:	http://phrat.de/%{name}-%{version}.tar.xz
 Source1:	examples
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 Requires:	xterm
 
